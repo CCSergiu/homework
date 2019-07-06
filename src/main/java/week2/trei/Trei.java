@@ -1,4 +1,4 @@
-package week2.Trei;
+package week2.trei;
 
 // cea mai mare cifra dintr-un numar
 

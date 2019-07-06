@@ -1,4 +1,4 @@
-package Week3_June1;
+package week3;
 
 public class Main {
 }

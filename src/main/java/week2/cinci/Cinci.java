@@ -1,4 +1,4 @@
-package week2.Cinci;
+package week2.cinci;
 
 // toate numerele prime mai mici decat n
 

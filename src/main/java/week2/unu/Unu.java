@@ -1,4 +1,4 @@
-package week2.Unu;
+package week2.unu;
 
 //Suma primelor 100 de numere mai mari decat 0
 

@@ -1,4 +1,4 @@
-package week2.Patru;
+package week2.patru;
 
 // numar palindrom
 

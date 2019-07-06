@@ -1,4 +1,4 @@
-package week2.Opt;
+package week2.opt;
 
 import java.util.Scanner;
 

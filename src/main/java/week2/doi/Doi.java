@@ -1,4 +1,4 @@
-package week2.Doi;
+package week2.doi;
 
 // cel mai mic numar dintr-un vector (for si foreach)
 

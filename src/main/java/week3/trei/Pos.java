@@ -1,4 +1,4 @@
-package Week3_June1.Trei;
+package week3.trei;
 
 import java.util.ArrayList;
 import java.util.Date;

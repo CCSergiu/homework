@@ -1,4 +1,4 @@
-package Week3_June1.Doi;
+package week3.doi;
 
 import java.util.Scanner;
 
