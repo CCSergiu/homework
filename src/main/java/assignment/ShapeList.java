@@ -43,4 +43,7 @@ public class ShapeList {
         return list.get(index).calculateSurface();
     }
 
+    public int getSize() {
+        return list.size();
+    }
 }
