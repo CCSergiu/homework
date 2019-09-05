@@ -1,7 +1,7 @@
 package week12.exercises;
 
 import java.io.*;
-import java.util.Date;
+import java.util.*;
 
 public class Tool {
 
@@ -139,5 +139,171 @@ public class Tool {
             }
         }
     }
-}
 
+    public void eleven(String path) {
+
+        BufferedReader bufferedReader = null;
+        String line = "";
+
+        try {
+            bufferedReader = new BufferedReader(new FileReader(path));
+            while ((line = bufferedReader.readLine()) != null) {
+                System.out.println(line);
+            }
+            bufferedReader.close();
+        } catch (FileNotFoundException e) {
+            System.err.println("File not found!");
+        } catch (IOException e) {
+            System.err.println("Unable to read the file");
+        }
+    }
+
+    public void tweleve(String path) {
+
+        StringBuilder stringBuilder = new StringBuilder();
+        String line = "";
+        try {
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(path));
+            while (line != null) {
+                stringBuilder.append(line);
+                stringBuilder.append(System.lineSeparator());
+                line = bufferedReader.readLine();
+                System.out.println(line);
+            }
+
+        } catch (FileNotFoundException e) {
+            System.err.println("File not found");
+        } catch (IOException e) {
+            System.err.println("Unable to read the file");
+        }
+    }
+
+    public void thirteen(String path) {
+
+        StringBuilder stringBuilder = new StringBuilder();
+        String line = "";
+        String all_lines = "";
+        try {
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(path));
+            while (line != null) {
+                if (line == null) {
+                    break;
+                }
+                all_lines += line;
+                line = bufferedReader.readLine();
+            }
+            System.out.println(all_lines);
+            bufferedReader.close();
+        } catch (FileNotFoundException e) {
+            System.err.println("File not found");
+        } catch (IOException e) {
+            System.err.println("Unable to read the file");
+        }
+    }
+
+    public void fourteen(String path) {
+
+        StringBuilder stringBuilder = new StringBuilder();
+        String line = "";
+        List<String> stringList = new ArrayList<String>();
+        try {
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(path));
+            while (line != null) {
+                line = bufferedReader.readLine();
+                stringBuilder.append(line);
+                stringBuilder.append(System.lineSeparator());
+                if (line == null) {
+                    break;
+                }
+                stringList.add(line);
+            }
+            System.out.println(Arrays.toString(stringList.toArray()));
+            bufferedReader.close();
+        } catch (FileNotFoundException e) {
+            System.err.println("File not found");
+        } catch (IOException e) {
+            System.err.println("Unable to read the file");
+        }
+
+    }
+
+    public void fifteen(String path) {
+
+        StringBuilder stringBuilder = new StringBuilder();
+        String line = "";
+        try {
+            FileWriter fileWriter = new FileWriter(path, false);
+
+            fileWriter.write("IO, 15 exercise output");
+            fileWriter.close();
+
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(path));
+
+            while (line != null) {
+                stringBuilder.append(line);
+                stringBuilder.append(System.lineSeparator());
+                line = bufferedReader.readLine();
+                System.out.println(line);
+            }
+            bufferedReader.close();
+        } catch (IOException ioe) {
+            System.err.println("IOException: " + ioe.getMessage());
+        }
+    }
+
+    public void sixteen(String path) {
+
+        StringBuilder stringBuilder = new StringBuilder();
+        String line = "";
+
+        try {
+            FileWriter fileWriter = new FileWriter(path, true);
+            fileWriter.write("\nIO, 16 exercise\n");
+            fileWriter.close();
+
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(path));
+            while (line != null) {
+                stringBuilder.append(line);
+                stringBuilder.append(System.lineSeparator());
+                line = bufferedReader.readLine();
+                System.out.println(line);
+            }
+            bufferedReader.close();
+        } catch (IOException ioe) {
+            System.err.println("IOException: " + ioe.getMessage());
+        }
+    }
+
+    public void seventeen(String path) {
+
+        BufferedReader bufferedReader = null;
+        String line = "";
+        try {
+            LineNumberReader reader = new LineNumberReader(new InputStreamReader(new FileInputStream(path), "UTF8"));
+            while (((line = reader.readLine()) != null) && reader.getLineNumber() <= 3) {
+                System.out.println(line);
+            }
+            reader.close();
+        } catch (FileNotFoundException e) {
+            System.err.println("FileNotFound");
+        } catch (IOException e) {
+            System.err.println("Unable to read the file");
+        }
+    }
+
+    public void eighteen(String path) throws FileNotFoundException {
+
+        String max = "";
+        String current_word;
+        Scanner scanner = new Scanner(new File(path));
+
+        while (scanner.hasNext()) {
+            current_word = scanner.next();
+            if (current_word.length() > max.length()) {
+                max = current_word;
+            }
+        }
+
+        System.out.println(max);
+    }
+}

@@ -40,6 +40,30 @@ public class Main {
 
         System.out.println("10. ");
         ex.ten("/Users/apple/Desktop/homework/src/main/resources/in.txt");
+
+        System.out.println("11. ");
+        ex.eleven("/Users/apple/Desktop/homework/src/main/resources/in2.txt");
+
+        System.out.println("12. ");
+        ex.tweleve("/Users/apple/Desktop/homework/src/main/resources/in2.txt");
+
+        System.out.println("13. ");
+        ex.thirteen("/Users/apple/Desktop/homework/src/main/resources/in2.txt");
+
+        System.out.println("14. ");
+        ex.fourteen("/Users/apple/Desktop/homework/src/main/resources/in2.txt");
+
+        System.out.println("15. ");
+        ex.fifteen("/Users/apple/Desktop/homework/src/main/resources/in15.txt");
+
+        System.out.println("16. ");
+        ex.sixteen("/Users/apple/Desktop/homework/src/main/resources/in15.txt");
+
+        System.out.println("17. ");
+        ex.seventeen("/Users/apple/Desktop/homework/src/main/resources/in2.txt");
+
+        System.out.println("18. ");
+        ex.eighteen("/Users/apple/Desktop/homework/src/main/resources/in15.txt");
     }
 
 }
