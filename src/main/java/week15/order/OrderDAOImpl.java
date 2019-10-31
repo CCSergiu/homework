@@ -22,7 +22,7 @@ public class OrderDAOImpl implements OrderDAO {
                 .forEach(System.out::println);
 
         orderDAO.create(Order.builder()
-                .orderNumber(10005)
+                .orderNumber(10003)
                 .orderDate(LocalDate.of(1992, 10, 12))
                 .requiredDate(LocalDate.of(1992, 10, 12))
                 .shippedDate(LocalDate.of(1992, 10, 12))
@@ -31,7 +31,7 @@ public class OrderDAOImpl implements OrderDAO {
                 .customerNumber(334)
                 .build());
 
-        orderDAO.delete(10009);
+        orderDAO.delete(10006);
 
     }
 
@@ -148,7 +148,6 @@ public class OrderDAOImpl implements OrderDAO {
 
         } catch (SQLException e) {
             e.printStackTrace();
-            System.out.println("eroare");
             return null;
         }
     }
